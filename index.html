@@ -4,62 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Proyecto Vedoya</title>
 </head>
 <body>
     <header>
-        <div class="logo">RESIPOX</div>
-        <div class="redes">
-            <a href="https://www.facebook.com/">
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.youtube.com/">
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-        </div>
-        <nav>
-            <ul class="nav">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/catalogo.html">Catalogo</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>
-            <hr>
-            Nuevos Diseños
-            <hr>
-        </h1>
-        <iframe class="content" width="540" height="315" src="https://www.youtube.com/embed/m43PtMy9vf4?si=i_wHttFpusqaIhqc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><img class="content" width="540" height="315" src="./resources/piso1.jpg" alt="">
-        <section>
-            <h2>Que es la Resina Epoxi?</h2>
+        <!-- BS Nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">RESIPOX</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/catalogo.html">Catalogo</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+                  </li>
+                </ul>
+                <span class="redes" class="navbar-text">
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.youtube.com/">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </nav>
+          <!-- BS Nav -->
+</header>
+<main>
+    <section class="mainer">
+        <iframe class="videores" src="https://www.youtube.com/embed/m43PtMy9vf4?si=i_wHttFpusqaIhqc" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        <div class="nright">
+            <h1>Que es la Resina Epoxi?</h1>
             <p>La resina epoxi es un líquido muy viscoso, transparente, que se endurece por la adición de un catalizador, el cual provoca el endurecimiento de la resina al cabo de unas horas. Este catalizador influye en las propiedades finales de la resina: brillo, color, dureza, termorresistencia, etc.</p>
-        </section>
-        <section>
-            <h2>Ventajas de la Resina Epoxi en pisos:</h2>
-            <ul>
-                <li>Gran resistencia mecánica</li>
-                <li>Resistencia química</li>
-                <li>Resistencia a la humedad</li>
-                <li>Resistencia a las temperaturas elevadas</li>
-                <li>Grandes propiedades adhesivas</li>
-                <li>Excelente aislamiento eléctrico</li>
-            </ul>
-        </section>
-        <h3>
-            <a href="./pages/contacto.html"><hr>Solicitar Cotización <hr></a>
-        </h3>
-    </main>
+        </div>
+    </section>
+    <section class="mainer">
+    <div class="nright">
+        <h2>Propiedades y Uso</h2>
+        <p>Este tipo de resinas soporta aproximadamente una temperatura máxima de 100o C sin llegar a deformarse, pero sin considerar la aplicación de fuego directo, ya que es un compuesto orgánico. También tiene una elevada resistencia al contacto con el agua, lo que la hace muy propicia para el uso en laminados de vidrio.</p>
+        </div>
+        <div class="nleft"></div>
+        <div class="ventajas">
+        <h3>Ventajas de la Resina Epoxi en pisos:</h3>
+        <ul>
+            <li>Gran resistencia mecánica</li>
+            <li>Resistencia química</li>
+            <li>Resistencia a la humedad</li>
+            <li>Resistencia a las temperaturas elevadas</li>
+            <li>Grandes propiedades adhesivas</li>
+            <li>Excelente aislamiento eléctrico</li>
+        </ul>
+    </div>
+    </section>
+</main>
     <footer>
         <div class="newsletter">
-            <h2>Recibi nuestras novedades...</h2>
+            <p>Recibi nuestras novedades...</p>
             <form action="script.email.php" method="post">
                 <input type="email" name="email" placeholder="ingresa tu email">
                 <input type="submit" value="Enviar">
@@ -67,5 +88,8 @@
         </div>
         <p>© 2024 Resipox. Sitio desarrollado por: Vedoya - Todos los derechos reservados</p>
     </footer>
+    <a class="masinfo" href="./pages/contacto.html">Solicitar Cotización</a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </body>
 </html>
