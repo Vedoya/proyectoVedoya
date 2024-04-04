@@ -193,7 +193,7 @@ footer{
     box-shadow: 0 0 5px 4px black;
 }
 
-@media only screen and (min-width: 770px) and (max-width: 1000px){
+@media only screen and (min-width: 771px) and (max-width: 1000px){
     .mainer .videores{
         height: 400px;
     }
@@ -213,6 +213,45 @@ footer{
     .redes a{
         font-size: 24px;
     }
+
+    .navbar-brand{
+        font-size: 29px;
+    }
+
+    .navbar-toggler{
+        font-size: 19px;
+    }
+
+    .navbar-nav .nav-link{
+        font-size: 21px;
+    }
+
+    .logo-qr{
+        justify-content: space-between;
+    }
+
+    form div{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .newsletter input[type="email"]{
+        width: 60%;
+    }
+
+    footer p{
+        font-size: 16px;
+    }
+
+    #servicios div{
+        text-align: left;
+    }
+
+    #servicios img{
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 @media only screen and (max-width:770px){
@@ -239,9 +278,48 @@ footer{
     .redes a{
         font-size: 18px;
     }
+
+    .navbar-brand{
+        font-size: 24px;
+    }
+
+    .navbar-toggler{
+        font-size: 16px;
+    }
+
+    .navbar-nav .nav-link{
+        font-size: 17px;
+    }
+
+    .logo-qr{
+        justify-content: space-around;
+    }
+
+    form div{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .newsletter input[type="email"]{
+        width: 70%;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    #servicios div{
+        text-align: center;
+    }
+
+    #servicios img{
+        width: 80%;
+        height: auto;
+    }
+
 }
 
-@media (max-width:480px){
+@media only screen and (max-width:480px){
     .mainer .videores{
         height: 200px;
     }
@@ -275,4 +353,44 @@ footer{
     .navbar-brand{
         font-size: 18px;
     }
+
+    .navbar-toggler{
+        font-size: 12px;
+    }
+
+    .navbar-nav .nav-link{
+        font-size: 14px;
+    }
+
+    .logo-qr{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-qr img{
+        margin-bottom: 10px;
+    }
+
+    form div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .newsletter input[type="email"]{
+        width: 60%;
+    }
+
+    footer p{
+        font-size: 12px;
+    }
+
+    #servicios div{
+        text-align: center;
+    }
+
+    #servicios img{
+        width: 100%;
+        height: auto;
+    }
+
 }
