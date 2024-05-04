@@ -33,6 +33,11 @@ html
 
 body
     min-height: 100vh
+    background-image: url(../resources/stone-texture.avif)
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    margin: 0
 
 
 .redes
@@ -66,9 +71,8 @@ body
 
 
 main
-    background-image: url(../resources/stone-texture.avif)
     background-size: cover
-    background-position: left
+    background-position: center
 
 
 .mainer
@@ -176,17 +180,51 @@ footer
 // Nosotros
 #nosotros
     div
-        width: 45%
+        width: 100%
+        display: flex
+        flex-wrap: wrap
     
+
+        div
+            flex: 0 0 50%
+            padding: 10px
+            box-sizing: border-box
     
     h1, h2
         color: #000
         font-family: Arial, sans-serif
+        padding: 10px
+        font-size: 50px
+
+
+    .contacto-info
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+        margin-top: 32px
+
+
+    .contacto-info
+        .social-icons
+            display: flex
+            justify-content: center
+            margin-bottom: 6px
+
+            a, i
+                font-size: 40px
+                margin: 0 8px
+
+
+    h3, h4
+        font-size: 40px
     
     
     p
         color: $color3
-        font-family: "Times New Roman", Times, serif
+        font-family: Arial, sans-serif
+        padding: 10px
+        font-size: 22px
     
     
     .fa-brands
@@ -354,3 +392,7 @@ footer
         flex-direction: row
         align-items: center
     
+    #nosotros
+        div
+            div
+                flex: 0 0 100%

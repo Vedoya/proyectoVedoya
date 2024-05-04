@@ -11,6 +11,11 @@ html {
 
 body {
   min-height: 100vh;
+  background-image: url(../resources/stone-texture.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 .redes a {
@@ -37,9 +42,8 @@ body {
 }
 
 main {
-  background-image: url(../resources/stone-texture.avif);
   background-size: cover;
-  background-position: left;
+  background-position: center;
 }
 
 .mainer {
@@ -139,15 +143,45 @@ footer {
 }
 
 #nosotros div {
-  width: 45%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#nosotros div div {
+  flex: 0 0 50%;
+  padding: 10px;
+  box-sizing: border-box;
 }
 #nosotros h1, #nosotros h2 {
   color: #000;
   font-family: Arial, sans-serif;
+  padding: 10px;
+  font-size: 50px;
+}
+#nosotros .contacto-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 32px;
+}
+#nosotros .contacto-info .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+#nosotros .contacto-info .social-icons a, #nosotros .contacto-info .social-icons i {
+  font-size: 40px;
+  margin: 0 8px;
+}
+#nosotros h3, #nosotros h4 {
+  font-size: 40px;
 }
 #nosotros p {
   color: #555555;
-  font-family: "Times New Roman", Times, serif;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  font-size: 22px;
 }
 #nosotros .fa-brands {
   color: #005085;
@@ -270,5 +304,8 @@ footer {
   form div {
     flex-direction: row;
     align-items: center;
+  }
+  #nosotros div div {
+    flex: 0 0 100%;
   }
 }/*# sourceMappingURL=style.css.map */
